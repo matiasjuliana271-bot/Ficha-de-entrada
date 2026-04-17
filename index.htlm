@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP 3 e Par 🔥</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 30px;
+    background: black;
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+}
+
+input, select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background: gold;
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffd700;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+VIP 3 e PAR 🔥
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>🔥 Grupo Exclusivo 🔥</h2>
+<p>Entrada somente para selecionados</p>
+<p>Casal e mulher: <b>GRÁTIS</b></p>
+<p>Homem solteiro: taxa de R$10,90</p>
+</div>
+
+<div class="card">
+<h2>📋 Ficha de Entrada</h2>
+
+<form onsubmit="enviarWhats(event)">
+
+<input type="text" id="nome" placeholder="Seu nome" required>
+
+<select id="tipo" required>
+<option value="">Selecione</option>
+<option>Casal</option>
+<option>Mulher</option>
+<option>Homem solteiro</option>
+</select>
+
+<input type="number" id="idade" placeholder="Idade" required>
+
+<input type="text" id="cidade" placeholder="Cidade">
+
+<button type="submit">Enviar inscrição 🔥</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+Acesso restrito • VIP 🔞
+</footer>
+
+<script>
+function enviarWhats(event) {
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let tipo = document.getElementById("tipo").value;
+    let idade = document.getElementById("idade").value;
+    let cidade = document.getElementById("cidade").value;
+
+    let mensagem = `🔥 NOVA INSCRIÇÃO VIP 🔥
+Nome: ${nome}
+Tipo: ${tipo}
+Idade: ${idade}
+Cidade: ${cidade}`;
+
+    // DOIS NÚMEROS
+    let numero1 = "5521998798756";
+    let numero2 = "5521979884682";
+
+    let url1 = `https://wa.me/${numero1}?text=${encodeURIComponent(mensagem)}`;
+    let url2 = `https://wa.me/${numero2}?text=${encodeURIComponent(mensagem)}`;
+
+    // Abre os dois
+    window.open(url1, "_blank");
+    setTimeout(() => {
+        window.open(url2, "_blank");
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
